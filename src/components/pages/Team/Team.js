@@ -3,19 +3,9 @@ function Team() {
   return (
     <div>
         <p className="bottom-space"></p>
-            <div
-              className='row home__hero-row'
-              style={{
-                display: 'flex',
-                flexDirection: false ? 'row-reverse' : 'row'
-              }}
-            >
-              <div className='col'>
-                <div className='home__hero-text-wrapper'>
-                  <div className='top-line'>Our amazing team</div>
-                </div>
-              </div>
               <div className='team__wrapper'>
+
+              <div className='top-line'>Our amazing team</div>
                 <div className='team__container'>
                 <div to='' className='team__container-card'>
                     <div className='team__container-cardInfo'>
@@ -64,7 +54,6 @@ function Team() {
                   </div>
                 </div>
               </div>
-            </div>
     </div>
   );
 }

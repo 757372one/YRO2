@@ -4,19 +4,8 @@ function Tokenomics() {
   return (
     <div>
         <section id="tokenomics">
-              <div
-                className='row home__hero-row'
-                style={{
-                  display: 'flex',
-                  flexDirection: 'false' === 'start' ? 'row-reverse' : 'row'
-                }}
-              >
-                <div className='col'>
-                  <div className='home__hero-text-wrapper'>
-                    <div className='top-line'>Tokenomics</div>
-                  </div>
-                </div>
                 <div className='tokenomics__wrapper'>
+                <div className='top-line'>Tokenomics</div>
                   <div className="tokenomics__container">
                   <div className='top-line'>Total Supply: </div><br />
                     <div className='top-line'>100,000,000,000</div>
@@ -70,7 +59,6 @@ function Tokenomics() {
                     </div>
                   </div>
                 </div>
-              </div>
               </section>
           <p className="bottom-space"></p>
     </div>
