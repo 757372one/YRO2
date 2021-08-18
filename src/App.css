@@ -239,7 +239,7 @@ img {
   background: linear-gradient(45deg, #0660e9 0%, #276afb 100%);
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
   width: 280px;
-  height: 500px;
+  height: 400px;
   text-decoration: none;
   border-radius: 4px;
 }
@@ -279,8 +279,8 @@ img {
 .tokenomics__container-cardInfo {
   display: flex;
   flex-direction: column;
-  height: 500px;
-  padding: 18px;
+  height: 300px;
+  padding: 7px;
   align-items: center;
   color: #fff;
 }
@@ -371,7 +371,7 @@ img {
   display: flex;
   flex-direction: column;
   height: 500px;
-  padding: 18px;
+  padding: 12px;
   align-items: center;
   color: #fff;
 }
