@@ -5,25 +5,24 @@ import Buy from '../Buy/Buy';
 import Team from '../Team/Team';
 import Footer from '../Footer/Footer';
 import Navbar from '../../Navbar';
-import PuffLoader from "react-spinners/PuffLoader";
+import PacmanLoader from "react-spinners/PacmanLoader";
 import { useState, useEffect } from 'react';
 
 function Home() {
   const [loading, setLoading] = useState(false);
-  let [color] = useState('#73BFFF')
+  let [color] = useState('#ffff00')
 
   useEffect(() => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 2000)
+    }, 2500)
 
   }, [])
 
   return (
     <div>
       {loading ? (
-  
         <div className={false ? 'home__hero-section' : 'home__hero-section darkBg-load' } >
           <div id="stars"></div>
           <div id="stars2"></div>
@@ -32,14 +31,11 @@ function Home() {
             <div className="tokenomics__container">
                     <div className='top-line'></div>
                     <br />
-                    <PuffLoader color={color} loading={loading} size={150} />
+                    <PacmanLoader color={color} loading={loading} size={30} />
                     <p className="bottom-space"></p>
                   </div>
             </div>
         </div>
-  
-        
-  
       ) : (
         <div>
           <Navbar />
