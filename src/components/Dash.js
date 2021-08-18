@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Web3 from 'web3'
 import { Button } from './Button';
 import { busdAbi } from "./busdAbi";
+import Navbar from './Navbar';
+import Footer from './pages/Footer/Footer'
 
 class Dash extends Component {
   YieldRocketContract = "0x59197299e100770b7193c40678b79ba8bfe8b1c4";
@@ -136,6 +138,7 @@ class Dash extends Component {
   render() {
     return (
       <div>
+        <Navbar />
       <div
         className={false ? 'home__hero-section' : 'home__hero-section darkBg' }
       >
@@ -190,33 +193,18 @@ class Dash extends Component {
               </div>
               <div className='col'>
                 <div className='home__hero-img-wrapper'>
-                  <div className='img-zoom'>
-                  <img src='images/missle.gif' style={{
-                    padding: '10px'
+                  <img src='images/panel.png' style={{
+                    padding: '4px'
                     }} alt='' className='home__hero-img' />
-                  </div>
                   <p className="bottom-space-sm"></p>
-                  <div className='row'>
-                          <form>
-                            <div className="row">
-                            <div className='col'>
-                            <input
-                              className='dash-input' 
-                              type="text" id="walletToCheck" placeholder="Input Wallet Here" 
-                            />
-                            </div>
-                            <div className='col'>
-                            <Button buttonStyle='btn--outline' onClick={() => this.readWallet()}>Check Ballance</Button>
-                            </div>
-                            </div>
-                          </form>
-                        </div>  
+                  
                 </div>
               </div>
             </div>
           <p className="bottom-space-sm"></p>
               <div className='tokenomics__wrapper'>
                 <div className='tokenomics__container'>
+                  
                   <div to='' className='dash__container-card'>
                     <div className='dash__container-cardInfo'>
                         <h4>Collected Rewards</h4>
@@ -242,9 +230,36 @@ class Dash extends Component {
                   </div>
                 </div>
               </div>
-            <p className="bottom-space"></p>
+            <p className="bottom-space-sm" />
+          <div className='row'>
+                          <form>
+                            <div className="row" style={{width:'100%'}}>
+                            <div className='col'>
+                            <input
+                              className='dash-input' 
+                              type="text" id="walletToCheck" placeholder="Input Wallet Here" 
+                            />
+                            </div>
+                            <div className='col'>
+                            <Button buttonStyle='btn--outline' onClick={() => this.readWallet()}>Check Ballance</Button>
+                            </div>
+                            </div>
+                          </form>
+                        </div>  
+                        <p className="bottom-space"></p>
+            <div className='tokenomics__wrapper'>
+                <div className='tokenomics__container'>
+                <div className='float-div-2'>
+                  <img src='images/missle.gif' style={{
+                    padding: '10px'
+                    }} alt=""/>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
+
+        <Footer />
       </div>
     );
   }

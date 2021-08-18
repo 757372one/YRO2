@@ -18,18 +18,22 @@ function Footer() {
         </p>
         <div className='row'>
           <div className='col'>
-            <a href='https://t.me/YieldRocketTG'>
-              <Button buttonStyle='btn--outline'>
-                Join our Telegram
-              </Button>
-            </a>
+            <div className='social-media-wrap'>
+              <a href='https://t.me/YieldRocketTG'>
+                <Button buttonStyle='btn--outline'>
+                  Join our Telegram
+                </Button>
+              </a>
+            </div>
           </div>
           <div className='col'>
+          <div className='social-media-wrap'>
           <a href='hello@yieldrocket.io'>
               <Button buttonStyle='btn--outline'>
                 hello@yieldrocket.io
               </Button>
             </a>
+            </div>
           </div>
         </div>
         <div className='row'>

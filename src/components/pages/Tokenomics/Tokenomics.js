@@ -7,7 +7,8 @@ function Tokenomics() {
                 <div className='tokenomics__wrapper'>
                 <div className='top-line'>Tokenomics</div>
                   <div className="tokenomics__container">
-                  <div className='top-line'>Total Supply: </div><br />
+                    <div className='top-line'>Total Supply: </div>
+                    <br />
                     <div className='top-line'>100,000,000,000</div>
                     <p className="bottom-space"></p>
                   </div>
