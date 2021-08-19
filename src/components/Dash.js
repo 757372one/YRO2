@@ -204,7 +204,6 @@ class Dash extends Component {
           <p className="bottom-space-sm"></p>
               <div className='tokenomics__wrapper'>
                 <div className='tokenomics__container'>
-                  
                   <div to='' className='dash__container-card'>
                     <div className='dash__container-cardInfo'>
                         <h4>Collected Rewards</h4>
