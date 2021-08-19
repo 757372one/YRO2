@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 import Footer from './pages/Footer/Footer'
 
 class Dash extends Component {
-  YieldRocketContract = "0x59197299e100770b7193c40678b79ba8bfe8b1c4";
+  YieldRocketContract = "";
   biggerNumber =   "1000000000000000000000000";
   bigNumber =   "1000000000000000000";
   balanceBUSDRewards = 0;
@@ -46,7 +46,7 @@ class Dash extends Component {
   async loadNetwork() {
     const networkId = await this.web3.eth.net.getId()
 	if(networkId === 56){
-		document.getElementById('networkId').innerHTML = "Binance Smart Chain - test contract";
+		document.getElementById('networkId').innerHTML = "Binance Smart Chain";
 	}
 	else if(networkId === 137){
 		document.getElementById('networkId').innerHTML = "Matic Mainnet";
