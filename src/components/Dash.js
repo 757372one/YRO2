@@ -39,14 +39,11 @@ class Dash extends Component {
     
   }
 
-  
-
   wait(ms) {
     return new Promise((resolve, reject) => setTimeout(resolve, ms));
   }
 
   async loadNetwork() {
-   // this.web3 = window.web3
     const networkId = await this.web3.eth.net.getId()
 	if(networkId === 56){
 		document.getElementById('networkId').innerHTML = "Binance Smart Chain";
@@ -69,11 +66,6 @@ class Dash extends Component {
     await window.ethereum.enable()
     const accounts = await this.web3.eth.getAccounts()
     this.setState({ account: accounts[0] })
- /*   document.getElementById('walletAddress').innerHTML = ((await (this.busdApp.methods.balanceOf(this.state.account).call()))/this.biggerNumber).toFixed(2)+"M";
-   
-   document.getElementById('walletRewards').innerHTML = 
-   ((await (this.busdApp.methods.getAccountDividendsInfo(this.state.account).call()))[4]/this.bigNumber).toFixed(2);	
-  */
   
   this.setState({
       walletRewards: ((await (this.busdApp.methods.getAccountDividendsInfo(this.state.account).call()))[4]/this.bigNumber).toFixed(2)
@@ -82,9 +74,6 @@ class Dash extends Component {
 		   this.setState({
      walletAddress: ((await (this.busdApp.methods.balanceOf(this.state.account).call()))/this.biggerNumber).toFixed(2)+"M"
 	      });
-  
-  /*document.getElementById('walletRewards').innerHTML = 
-    ((await (this.busdApp.methods.balanceOf(this.state.account).call()))/this.biggerNumber).toFixed(2)+"M";*/
   }
   
    async disconnect() {
@@ -111,8 +100,15 @@ class Dash extends Component {
   async readWallet() {
     let wallet = document.getElementById("walletToCheck").value;
     console.log(wallet);
-    document.getElementById('balanceBUSDRewards').innerHTML = 
-    ((await (this.busdApp.methods.getAccountDividendsInfo(wallet).call()))[4]/this.bigNumber).toFixed(2);
+    this.setState({
+      walletRewards: ((await (this.busdApp.methods.getAccountDividendsInfo(wallet).call()))[4]/this.bigNumber).toFixed(2)
+	      });
+		  
+		   this.setState({
+     walletAddress: ((await (this.busdApp.methods.balanceOf(wallet).call()))/this.biggerNumber).toFixed(2)+"M"
+	      });
+    // document.getElementById('balanceBUSDRewards').innerHTML = 
+    // ((await (this.busdApp.methods.getAccountDividendsInfo(wallet).call()))[4]/this.bigNumber).toFixed(2);
   }
  CheckWalletConnection = () => {
     if(this.state.account.length > 0){
@@ -161,24 +157,24 @@ class Dash extends Component {
                   <p className="bottom-space-sm"></p>
                 <div className='row'>
                     <div className='col'>
-                      <div
-                      className='btn-link'>
-                      <this.CheckWalletConnection/>
-                    </div>
+                        <div
+                        className='btn-link'>
+                        <this.CheckWalletConnection/>
+                      </div>
                     </div>
                     <div className='col'>
-                    <div
-                      className='btn-link'>
-                        <Button buttonSize='btn--medium' buttonColor='blue' onClick={() => this.claim()}>
-                          Claim
-                        </Button>
-                    </div>
+                      <div
+                        className='btn-link'>
+                          <Button buttonSize='btn--medium' buttonColor='blue' onClick={() => this.claim()}>
+                            Claim
+                          </Button>
+                      </div>
                     </div>
                   </div>
                   <br />
                   <p className="bottom-space-sm"></p>
                   <div className='top-line' id="networkId"></div>
-                  <p className="bottom-space-sm"></p>
+                  
                     <p
                       className={
                         true
@@ -197,8 +193,7 @@ class Dash extends Component {
                     padding: '2px'
                     }} alt='' className='home__hero-img' />
                   <p className="bottom-space-sm"></p>
-                  
-                </div>
+                  </div>
               </div>
             </div>
           <p className="bottom-space-sm"></p>
@@ -208,7 +203,7 @@ class Dash extends Component {
                     <div className='dash__container-cardInfo'>
                         <h4>Collected Rewards</h4>
                         <p className="bottom-space-sm" />
-                        <p id="walletRewards">{this.state.walletRewards}</p><p> $BUSD</p>
+                        <span id="walletRewards">{this.state.walletRewards}</span><span> $BUSD</span>
                         <p className="bottom-space-sm" />
                     </div>
                   </div>
@@ -216,7 +211,7 @@ class Dash extends Component {
                     <div className='dash__container-cardInfo'>
                         <h4>Wallet Ballance</h4>
                         <p className="bottom-space-sm" />
-                        <p id="walletAddress">{this.state.walletAddress}</p><p> $YRO</p>
+                        <span id="walletAddress">{this.state.walletAddress}</span><span> $YRO</span>
                         <p className="bottom-space-sm" />
                       </div>
                   </div>
@@ -230,6 +225,17 @@ class Dash extends Component {
                   </div>
                 </div>
               </div>
+              <div className='row'>
+                        <div
+                        className='btn-link'>
+                        <input className="dash-input" type="text" id="walletToCheck" placeholder="Input your wallet address here" />
+                      </div>
+                      <div
+                        className='btn-link'>
+                          <Button buttonStyle='btn--outline' onClick={() => this.readWallet()}>Check Balance </Button>
+                      </div>
+
+                  </div>
                         <p className="bottom-space"></p>
             <div className='tokenomics__wrapper'>
                 <div className='tokenomics__container'>
