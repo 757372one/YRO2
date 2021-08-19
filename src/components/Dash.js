@@ -210,6 +210,7 @@ class Dash extends Component {
                         <h4>Collected Rewards</h4>
                         <p className="bottom-space-sm" />
                         <p id="walletRewards">{this.state.walletRewards}</p><p> $BUSD</p>
+                        <p className="bottom-space-sm" />
                     </div>
                   </div>
                   <div to='' className='dash__container-card'>
