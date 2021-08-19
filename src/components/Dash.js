@@ -209,7 +209,7 @@ class Dash extends Component {
                     <div className='dash__container-cardInfo'>
                         <h4>Collected Rewards</h4>
                         <p className="bottom-space-sm" />
-                        <p id="balanceBUSDRewards"></p><p> $BUSD</p>
+                        <p id="walletRewards"></p><p> $BUSD</p>
                     </div>
                   </div>
                   <div to='' className='dash__container-card'>
@@ -230,22 +230,6 @@ class Dash extends Component {
                   </div>
                 </div>
               </div>
-            <p className="bottom-space-sm" />
-          <div className='row'>
-                          <form>
-                            <div className="row" style={{width:'100%'}}>
-                            <div className='col'>
-                            <input
-                              className='dash-input' 
-                              type="text" id="walletToCheck" placeholder="Input Wallet Here" 
-                            />
-                            </div>
-                            <div className='col'>
-                            <Button buttonStyle='btn--outline' onClick={() => this.readWallet()}>Check Ballance</Button>
-                            </div>
-                            </div>
-                          </form>
-                        </div>  
                         <p className="bottom-space"></p>
             <div className='tokenomics__wrapper'>
                 <div className='tokenomics__container'>
