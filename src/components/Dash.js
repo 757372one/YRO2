@@ -186,7 +186,7 @@ class Dash extends Component {
                           : 'home__hero-subtitle'
                       }
                     >
-                      $BUSD rewards are sent automatically to your wallet! If you want to claim manually, gas fees will be incurred!
+                      $BUSD rewards are sent automatically to your wallet. Gas fees will be incurred if you want to claim manually.
                       <br /> 
                     </p>   
                 </div>
@@ -194,7 +194,7 @@ class Dash extends Component {
               <div className='col'>
                 <div className='home__hero-img-wrapper'>
                   <img src='images/panel.png' style={{
-                    padding: '4px'
+                    padding: '2px'
                     }} alt='' className='home__hero-img' />
                   <p className="bottom-space-sm"></p>
                   
@@ -250,7 +250,7 @@ class Dash extends Component {
             <div className='tokenomics__wrapper'>
                 <div className='tokenomics__container'>
                 <div className='float-div-2'>
-                  <img src='images/missle.gif' style={{
+                  <img src='images/iss.png' style={{
                     padding: '10px'
                     }} alt=""/>
                   </div>

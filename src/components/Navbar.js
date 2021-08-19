@@ -34,7 +34,8 @@ function Navbar() {
         <nav className='navbar'>
           <div className='navbar-container container'>
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <img  alt='top-logo' src={logo_white} width="50" height="50" />              ieldRocket
+              <h2>
+            <img  alt='top-logo' src={logo_white} width="50" height="50" />              ieldRocket</h2>
             </Link>
             <div className='menu-icon' onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}

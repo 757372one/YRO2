@@ -50,7 +50,7 @@ function Landing() {
               <div className='col'>
                 <div className='home__hero-img-wrapper'>
                 <div className='float-div-2'>
-                  <img src='images/rocket1.gif' alt='' width="400px" className='home__hero-img' />
+                  <img src='images/rocket1.gif' alt='' width="500px" className='home__hero-img' />
                 </div>
                 </div>
               </div>
