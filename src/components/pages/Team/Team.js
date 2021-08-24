@@ -19,6 +19,24 @@ function Team() {
                   <div to='' className='team__container-card'>
                     <div className='team__container-cardInfo'>
                       <div className="team__container-features">
+                      <h1><img src='images/team1.png' alt='' width="100px" height="100px" className='home__hero-img' /></h1>
+                      </div>
+                      <h3>Olav</h3>
+                      <p>Developer</p>
+                    </div>
+                  </div>
+                  <div to='' className='team__container-card'>
+                    <div className='team__container-cardInfo'>
+                      <div className="team__container-features">
+                      <h1><img src='images/team2.png' alt='' width="100px" height="100px" className='home__hero-img' /></h1>
+                      </div>
+                      <h3>Victor</h3>
+                      <p>Designer/Dev</p>
+                    </div>
+                  </div>
+                  <div to='' className='team__container-card'>
+                    <div className='team__container-cardInfo'>
+                      <div className="team__container-features">
                       <h1><img src='images/team4.png' alt='' width="100px" height="100px" className='home__hero-img' /></h1>
                       </div>
                       <h3>Joe</h3>
@@ -34,24 +52,7 @@ function Team() {
                       <p>Community Lead</p>
                     </div>
                   </div>
-                  <div to='' className='team__container-card'>
-                    <div className='team__container-cardInfo'>
-                      <div className="team__container-features">
-                      <h1><img src='images/team2.png' alt='' width="100px" height="100px" className='home__hero-img' /></h1>
-                      </div>
-                      <h3>Annie</h3>
-                      <p>Designer</p>
-                    </div>
-                  </div>
-                  <div to='' className='team__container-card'>
-                    <div className='team__container-cardInfo'>
-                      <div className="team__container-features">
-                      <h1><img src='images/team1.png' alt='' width="100px" height="100px" className='home__hero-img' /></h1>
-                      </div>
-                      <h3>Olav</h3>
-                      <p>Developer</p>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
     </div>
