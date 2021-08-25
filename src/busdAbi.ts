@@ -571,7 +571,7 @@ export const busdAbi = [
        "name":"dividendTracker",
        "outputs":[
           {
-             "internalType":"contract BabyBUSDDividendTracker",
+             "internalType":"contract YieldRocketDividendTracker",
              "name":"",
              "type":"address"
           }
