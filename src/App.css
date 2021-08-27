@@ -206,6 +206,16 @@ form {
   text-transform: uppercase;
   margin-bottom: 16px;
 }
+.thin-line {
+  font-size: 30px;
+  line-height: 16px;
+  font-weight: 100;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  padding: 10px;
+}
+
 
 .heading {
   margin-bottom: 15px;
@@ -627,9 +637,9 @@ img {
   align-items: center;
 }
 .count-timer {
-  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.411);
   border-radius: 3px;
-  display: grid;
+  display: block ruby;
   grid-template-columns: repeat(7, 1fr);
   margin-top: 2em;
   padding: 2em;

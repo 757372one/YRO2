@@ -110,7 +110,7 @@ class Cryptonauts extends Component {
   chooseImage = (cardId) => {
     cardId = cardId.toString()
     if(this.state.cardsWon.includes(cardId)) {
-      return window.location.origin + '/images/cryptonauts/fundamental/white.png'
+      return window.location.origin + '/images/cryptonauts/fundamental/blank.gif'
     }
     else if(this.state.cardsChosenId.includes(cardId)) {
       return CARD_ARRAY[cardId].img

@@ -1,9 +1,53 @@
+import React, { useEffect, useState, useRef} from 'react';
 import { GiWallet, GiDroplets, GiSpermWhale } from 'react-icons/gi';
 import PieChart from './Donuts';
 import { Button } from '../../Button';
 
 
 function Tokenomics() {
+
+  const [timerDays, setTimerDays] = useState('00');
+  const [timerHours, setTimerHours] = useState('00');
+  const [timerMinutes, setTimerMinutes] = useState('00');
+  const [timerSeconds, setTimerSeconds] = useState('00');
+  const [timerMiliseconds, setTimerMiliseconds] = useState('0');
+
+  let interval = useRef();
+
+  const startTimer = () => {
+    const countdownDate = new Date('September 3, 2021 00:00:00').getTime()
+
+    interval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = countdownDate - now
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+      const minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
+      const seconds = Math.floor(distance % (1000 * 60) / 1000);
+      const miliseconds = Math.floor(distance % ((1000 * 60) / 1000)/10)
+
+      if (distance < 0) {
+        clearInterval(interval.current);
+      }else{
+        setTimerDays(days);
+        setTimerHours(hours);
+        setTimerMinutes(minutes);
+        setTimerSeconds(seconds);
+        setTimerMiliseconds(miliseconds)
+      }
+
+    }, interval);
+  }
+
+  //compdidmount
+  useEffect(() => {
+    startTimer();
+    return () => {
+      clearInterval(interval.current);
+    };
+  })
+
+
   return (
     <div>
         <section id="tokenomics">
@@ -182,9 +226,47 @@ function Tokenomics() {
                                 fontSize: '10px',
                                 fontWeight: '200',
                                 textAlign: 'center'
-                              }}>*Price and Conditions may change, please stay tuned for the latest information. Our reach out to our team for more information.</h1>
+                              }}>*Price and Conditions may change, please stay tuned for the latest updates. Reach out to our team for more information.</h1>
                   
                   </div>
+                  <p className="bottom-space-sm"></p>
+          <div
+              className='counter-container'
+            >
+                <div className='count-timer'>
+                  <div style={{width:'50px'}}>
+                  <section>
+                    <h1 className='thin-line'>{timerDays}</h1>
+                  </section>
+                  </div>
+                  <span>.</span>
+                  <div style={{width:'50px'}}>
+                  <section>
+                    <h1 className='thin-line'>{timerHours}</h1>
+                  </section>
+                  </div>
+                  <span>.</span>
+                  <div style={{width:'50px'}}>
+                  <section>
+                    <h1 className='thin-line'>{timerMinutes}</h1>
+                  </section>
+                  </div>
+                  <span>.</span>
+                  <div style={{width:'50px'}}>
+                  <section>
+                    <h1 className='thin-line'>{timerSeconds}</h1>
+                  </section>
+                  </div>
+                  <span>.</span>
+                  <div style={{width:'50px'}}>
+                  <section>
+                    <h1 className='thin-line'>{timerMiliseconds}</h1>
+                  </section>
+                  </div>
+                  
+              </div>
+            </div>
+          <p className="bottom-space-sm"></p>
 
           <p className="bottom-space-sm"></p>
                   <div className="tokenomics__container">

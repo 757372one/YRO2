@@ -14,7 +14,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join our exclusive community to receive the latest info on passive income streams in crypto.
+          Join our exclusive community to receive the latest info on passive crypto streams.
         </p>
         <div className='row'>
           <div className='col'>
