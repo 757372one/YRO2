@@ -87,7 +87,7 @@ function Tokenomics() {
               }}>0.75%</h1>
                   </div>
                   <div className="tokenomics__container">
-                    <p>of total supply</p>
+                    <p>of total supply*</p>
                   </div>
                   <div
                       className='row home__hero-row'
@@ -175,7 +175,15 @@ function Tokenomics() {
                                 fontWeight: '200',
                                 textAlign: 'center'
                               }}>Presale address to be announced. Join our Telegram: </h1>
-
+                              </div>
+                  <div className="tokenomics__container">
+                  <h1 style={{
+                                display: 'flex',
+                                fontSize: '10px',
+                                fontWeight: '200',
+                                textAlign: 'center'
+                              }}>*Price and Conditions may change, please stay tuned for the latest information. Our reach out to our team for more information.</h1>
+                  
                   </div>
 
           <p className="bottom-space-sm"></p>

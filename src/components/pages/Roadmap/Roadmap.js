@@ -23,7 +23,7 @@ function Roadmap() {
                 </div>
                 <div className="col">
                     <div className='home__hero-img-wrapper'>
-                    <img src='images/upsidedown.gif' width="400px" alt='' className='home__hero-img' />
+                    <img src='images/web/upsidedown.gif' width="400px" alt='' className='home__hero-img' />
                     </div>
                 </div>
                 </div>
@@ -34,7 +34,7 @@ function Roadmap() {
                 className='row'
             >
                 <div width="100%">
-                <img src='images/roadmap.png' width="100%" alt='' className='home__hero-img' />
+                <img src='images/web/roadmap.png' width="100%" alt='' className='home__hero-img' />
                 </div>
             </div>
             

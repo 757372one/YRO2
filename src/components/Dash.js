@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Web3 from 'web3'
 import { Button } from './Button';
-import { busdAbi } from "./busdAbi";
+import { busdAbi } from "../abis/busdAbi";
 import Navbar from './Navbar';
 import Footer from './pages/Footer/Footer'
 
 class Dash extends Component {
-  YieldRocketContract = "0x59197299e100770b7193c40678b79ba8bfe8b1c4";
+  YieldRocketContract = "0x000";
   biggerNumber =   "1000000000000000000000000";
   bigNumber =   "1000000000000000000";
   balanceBUSDRewards = 0;
@@ -189,7 +189,7 @@ class Dash extends Component {
               </div>
               <div className='col'>
                 <div className='home__hero-img-wrapper'>
-                  <img src='images/panel.png' style={{
+                  <img src='images/web/panel.png' style={{
                     padding: '2px'
                     }} alt='' className='home__hero-img' />
                   <p className="bottom-space-sm"></p>
@@ -240,7 +240,7 @@ class Dash extends Component {
             <div className='tokenomics__wrapper'>
                 <div className='tokenomics__container'>
                 <div className='float-div-2'>
-                  <img src='images/iss.png' style={{
+                  <img src='images/web/iss.png' style={{
                     padding: '10px'
                     }} alt=""/>
                   </div>

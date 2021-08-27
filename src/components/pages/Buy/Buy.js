@@ -38,7 +38,7 @@ function Buy() {
                 <div className='col'>
                   <div className='img-zoom'>
                       <div className='buy__wrapper'>
-                        <img src='images/bitcoin.gif' alt='' margin width="200px" className='home__hero-img' />
+                        <img src='images/web/bitcoin.gif' alt='' margin width="200px" className='home__hero-img' />
                       </div>
                     </div>
               </div>
