@@ -245,7 +245,7 @@ class Cryptonauts extends Component {
                 <p className="bottom-space-sm"></p>
                 <div className='tokenomics__wrapper'>
                   <h5>Tokens Collected:<span id="result">&nbsp;{this.state.tokenURIs.length}</span></h5>
-                   <div>
+                   <div style={{display: 'flex'}}>
                     { this.state.tokenURIs.map((tokenURI, key) => {
                       return(<a href={tokenURI} download={key}>
 
