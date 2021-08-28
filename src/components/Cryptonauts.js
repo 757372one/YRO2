@@ -214,7 +214,7 @@ class Cryptonauts extends Component {
                               fontWeight: '200',
                               textAlign: 'center'
                             }}>Welcome brave explorers, 
-                            here is your change to find a pair of our first Cryptonaut NFT collection.
+                            here is your chance to find a pair of our first Cryptonaut NFT collection.
                             <br />Find a matching portrait and save it to your wallet.
                             <br />Limited time offer. Gas fees will apply.</h1>
 
