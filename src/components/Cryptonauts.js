@@ -16,16 +16,6 @@ const CARD_ARRAY = [
   {name: 'Fundamental_8',img: '/images/cryptonauts/fundamental/Fundamental_8.png'},
   {name: 'Fundamental_9',img: '/images/cryptonauts/fundamental/Fundamental_9.png'},
   {name: 'Fundamental_10',img: '/images/cryptonauts/fundamental/Fundamental_10.png'},
-  {name: 'Fundamental_11',img: '/images/cryptonauts/fundamental/Fundamental_11.png'},
-  {name: 'Fundamental_12',img: '/images/cryptonauts/fundamental/Fundamental_12.png'},
-  {name: 'Fundamental_13',img: '/images/cryptonauts/fundamental/Fundamental_13.png'},
-  {name: 'Fundamental_14',img: '/images/cryptonauts/fundamental/Fundamental_14.png'},
-  {name: 'Fundamental_15',img: '/images/cryptonauts/fundamental/Fundamental_15.png'},
-  {name: 'Fundamental_16',img: '/images/cryptonauts/fundamental/Fundamental_16.png'},
-  {name: 'Fundamental_17',img: '/images/cryptonauts/fundamental/Fundamental_17.png'},
-  {name: 'Fundamental_18',img: '/images/cryptonauts/fundamental/Fundamental_18.png'},
-  {name: 'Fundamental_19',img: '/images/cryptonauts/fundamental/Fundamental_19.png'},
-  {name: 'Fundamental_20',img: '/images/cryptonauts/fundamental/Fundamental_20.png'},
   {name: 'Fundamental_1',img: '/images/cryptonauts/fundamental/Fundamental_1.png'},
   {name: 'Fundamental_2',img: '/images/cryptonauts/fundamental/Fundamental_2.png'},
   {name: 'Fundamental_3',img: '/images/cryptonauts/fundamental/Fundamental_3.png'},
@@ -35,17 +25,7 @@ const CARD_ARRAY = [
   {name: 'Fundamental_7',img: '/images/cryptonauts/fundamental/Fundamental_7.png'},
   {name: 'Fundamental_8',img: '/images/cryptonauts/fundamental/Fundamental_8.png'},
   {name: 'Fundamental_9',img: '/images/cryptonauts/fundamental/Fundamental_9.png'},
-  {name: 'Fundamental_10',img: '/images/cryptonauts/fundamental/Fundamental_10.png'},
-  {name: 'Fundamental_11',img: '/images/cryptonauts/fundamental/Fundamental_11.png'},
-  {name: 'Fundamental_12',img: '/images/cryptonauts/fundamental/Fundamental_12.png'},
-  {name: 'Fundamental_13',img: '/images/cryptonauts/fundamental/Fundamental_13.png'},
-  {name: 'Fundamental_14',img: '/images/cryptonauts/fundamental/Fundamental_14.png'},
-  {name: 'Fundamental_15',img: '/images/cryptonauts/fundamental/Fundamental_15.png'},
-  {name: 'Fundamental_16',img: '/images/cryptonauts/fundamental/Fundamental_16.png'},
-  {name: 'Fundamental_17',img: '/images/cryptonauts/fundamental/Fundamental_17.png'},
-  {name: 'Fundamental_18',img: '/images/cryptonauts/fundamental/Fundamental_18.png'},
-  {name: 'Fundamental_19',img: '/images/cryptonauts/fundamental/Fundamental_19.png'},
-  {name: 'Fundamental_20',img: '/images/cryptonauts/fundamental/Fundamental_20.png'}
+  {name: 'Fundamental_10',img: '/images/cryptonauts/fundamental/Fundamental_10.png'}
 ]
 
   // _____________ TIMER ______________
