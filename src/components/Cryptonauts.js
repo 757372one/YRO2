@@ -250,8 +250,18 @@ class Cryptonauts extends Component {
                               }}>Once you find a matching cryptonaut and mint it to your wallet,
                               this website will recognize all the 
                               <br />YRO Cryptonaut NFTs your wallet owns and display the collectibles above 
-                              <br />keep them, send them, sell them
-                              <br />or click to download a png copy and set it as your social avatar.</h1>
+                              <br />keep them, send them, sell them*
+                              <br />or click to download a png copy and set it as your social avatar.
+                              <br />.</h1>
+                  </div>
+                  <div className='row'>
+                  <h1 style={{
+                                display: 'flex',
+                                fontSize: '10px',
+                                fontWeight: '200',
+                                textAlign: 'center'
+                              }}>* NFT Marketplace coming in Q4! Check roadmap for development updates.
+                              <br /></h1>
                   </div>
                   <p className="bottom-space-md"></p>
                   <div className='row'>
