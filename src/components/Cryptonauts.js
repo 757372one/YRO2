@@ -194,8 +194,9 @@ class Cryptonauts extends Component {
                               fontWeight: '200',
                               textAlign: 'center'
                             }}>Welcome brave explorers, 
-                            here is your chance to find a pair of our first Cryptonaut NFT collection.
-                            <br />Find a matching portrait and save it to your wallet.
+                            here is your chance to find and mint a pair of our first Cryptonaut NFT collection.
+                            <br />Find a matching portrait to save the NFT certificate to your wallet.
+                            <br />
                             <br />Limited time offer. Gas fees will apply.</h1>
 
 
@@ -246,7 +247,10 @@ class Cryptonauts extends Component {
                                 fontSize: '17px',
                                 fontWeight: '300',
                                 textAlign: 'center'
-                              }}>Once you find the brave explorer, keep them in your wallet, send them to your friends, sell them on a marketplace.
+                              }}>Once you find a matching cryptonaut and mint it to your wallet,
+                              this website will recognize all the 
+                              <br />YRO Cryptonaut NFTs your wallet owns and display the collectibles above 
+                              <br />keep them, send them, sell them
                               <br />or click to download a png copy and set it as your social avatar.</h1>
                   </div>
                   <p className="bottom-space-md"></p>
