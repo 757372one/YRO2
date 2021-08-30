@@ -639,7 +639,7 @@ img {
 .count-timer {
   border: 1px solid rgba(255, 255, 255, 0.411);
   border-radius: 3px;
-  display: block ruby;
+  display: flex;
   grid-template-columns: repeat(7, 1fr);
   margin-top: 2em;
   padding: 2em;
