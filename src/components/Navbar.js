@@ -74,12 +74,11 @@ function Navbar() {
               </NavHashLink>
               </li>
               <li className='nav-item'>
-              <NavHashLink to="cryptonauts"
-              scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'end', inline: "nearest" })}>
+              <Link to="cryptonauts">
               <div className='nav-links'>
                     NFT
                   </div>
-              </NavHashLink>
+              </Link>
               </li>
               <li className='nav-btn'>
                 {button ? (

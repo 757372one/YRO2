@@ -5,7 +5,7 @@ import Buy from '../Buy/Buy';
 import Team from '../Team/Team';
 import Footer from '../Footer/Footer';
 import Navbar from '../../Navbar';
-import PacmanLoader from "react-spinners/PacmanLoader";
+import FadeLoader from "react-spinners/FadeLoader";
 import { useState, useEffect } from 'react';
 
 function Home() {
@@ -31,7 +31,7 @@ function Home() {
             <div className="tokenomics__container">
                     <div className='top-line'></div>
                     <br />
-                    <PacmanLoader color={color} loading={loading} size={30} />
+                    <FadeLoader color={color} loading={loading} size={30} />
                     <p className="bottom-space"></p>
                   </div>
             </div>
