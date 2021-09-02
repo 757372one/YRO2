@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef} from 'react';
 import { GiWallet, GiDroplets, GiSpermWhale } from 'react-icons/gi';
 import PieChart from './Donuts';
-import { Button } from '../../Button';
+
 
 
 function Tokenomics() {
@@ -15,7 +15,7 @@ function Tokenomics() {
   let interval = useRef();
 
   const startTimer = () => {
-    const countdownDate = new Date('September 3, 2021 00:00:00').getTime()
+    const countdownDate = new Date('September 7, 2021 00:00:00').getTime()
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -46,6 +46,7 @@ function Tokenomics() {
       clearInterval(interval.current);
     };
   })
+
 
 
   return (
@@ -133,6 +134,16 @@ function Tokenomics() {
                   <div className="tokenomics__container">
                     <p>of total supply*</p>
                   </div>
+
+                  <div className="tokenomics__container">
+                  <h1 style={{
+                                display: 'flex',
+                                fontSize: '10px',
+                                fontWeight: '200',
+                                textAlign: 'center'
+                              }}>*Listed price is an estimation that will be scaled acordingly to accomodate all early investors</h1>
+                  
+                  </div>
                   <div
                       className='row home__hero-row'
                       style={{
@@ -201,8 +212,8 @@ function Tokenomics() {
                     <div style={{ width: 500, height: 250 }}>
                         <PieChart
                           data={[{ key: "Presale & Launch: 85%", value: 85 }, 
-                          { key: "Marketing: 7.5%", value: 7.5 },
-                          { key: "Dev: 7.5%", value: 7.5 }]}
+                          { key: "Development: 6%", value: 6 },
+                          { key: "Marketing: 9%", value: 9 }]}
                           label="Token Allocation"
                         />
                     </div>
@@ -210,26 +221,16 @@ function Tokenomics() {
             </div>
                 </div>
               </section>
-          <p className="bottom-space-sm"></p>
+          <p className="bottom-space-md" />
 
           <div className="tokenomics__container">
                     <h1 style={{
                                 display: 'flex',
-                                fontSize: '20px',
-                                fontWeight: '200',
+                                fontSize: '30px',
+                                fontWeight: '400',
                                 textAlign: 'center'
-                              }}>Presale address to be announced. Join our Telegram: </h1>
+                              }}>PRESALE ENDS IN:</h1>
                               </div>
-                  <div className="tokenomics__container">
-                  <h1 style={{
-                                display: 'flex',
-                                fontSize: '10px',
-                                fontWeight: '200',
-                                textAlign: 'center'
-                              }}>*Price and Conditions may change, please stay tuned for the latest updates. Reach out to our team for more information.</h1>
-                  
-                  </div>
-                  <p className="bottom-space-sm"></p>
           <div
               className='counter-container'
             >
@@ -267,16 +268,8 @@ function Tokenomics() {
               </div>
             </div>
           <p className="bottom-space-sm"></p>
-
-          <p className="bottom-space-sm"></p>
-                  <div className="tokenomics__container">
-                      <a href='https://t.me/YieldRocketTG'>
-                        <Button buttonSize='btn--wide' buttonColor='blue'>
-                          Telegram
-                        </Button>
-                      </a>
-                  </div>
-    </div>
+                  
+          </div>
   );
 }
 

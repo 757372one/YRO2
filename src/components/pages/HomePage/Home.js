@@ -1,5 +1,6 @@
 import Landing from '../Landing/Landing';
 import Tokenomics from '../Tokenomics/Tokenomics';
+import Presale from '../Presale/Presale';
 import Roadmap from '../Roadmap/Roadmap';
 import Buy from '../Buy/Buy';
 import Team from '../Team/Team';
@@ -46,6 +47,7 @@ function Home() {
               <div className='container'>
                     <Landing />
                     <Tokenomics />
+                    <Presale />
                     <Roadmap />
                     <Buy />
                     <Team />
