@@ -15,7 +15,7 @@ function Tokenomics() {
   let interval = useRef();
 
   const startTimer = () => {
-    const countdownDate = new Date('September 3, 2021 01:00:00').getTime()
+    const countdownDate = new Date('September 3, 2021 17:00:00').getTime()
 
     interval = setInterval(() => {
       const now = new Date().getTime();
