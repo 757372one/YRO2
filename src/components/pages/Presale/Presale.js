@@ -4,7 +4,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 class Presale extends Component {
     state = {
-        value: '0xD77f6C488E11A400FaCb22AeCe73AB25F557B8a9',
+        value: '0x9BB9E3B5061c4AFD04D22A98DCf7B57c877aD6e3',
         copied: false,
       };
   render() {
@@ -26,8 +26,19 @@ class Presale extends Component {
                     display: 'flex',
                     fontSize: '15px',
                     fontWeight: '200',
-                    textAlign: 'center'
-                    }}>0xD77f6C488E11A400FaCb22AeCe73AB25F557B8a9</h1>
+                    textAlign: 'center',
+                    lineHeight:'10px',
+                    color:'red'
+                    }}>0x9BB9E3B5061c4AFD04D22A98DCf7B57c877aD6e3</h1>
+        </div>
+        <div className="tokenomics__container">
+        <h1 style={{
+                    display: 'flex',
+                    fontSize: '12px',
+                    fontWeight: '200',
+                    textAlign: 'center',
+                    lineHeight:'10px'
+                    }}>MIN: 0.1 BNB - MAX: 1.5 BNB</h1>
         </div>
         <div className="tokenomics__container">
 
