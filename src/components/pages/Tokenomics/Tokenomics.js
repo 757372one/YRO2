@@ -15,7 +15,7 @@ function Tokenomics() {
   let interval = useRef();
 
   const startTimer = () => {
-    const countdownDate = new Date('September 8, 2021 00:00:00').getTime()
+    const countdownDate = new Date('September 3, 2021 01:00:00').getTime()
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -229,7 +229,7 @@ function Tokenomics() {
                                 fontSize: '30px',
                                 fontWeight: '300',
                                 textAlign: 'center'
-                              }}>PRESALE ENDS</h1>
+                              }}>PRESALE STARTS</h1>
           </div>
           <div className="tokenomics__container">
                     <h1 style={{
@@ -237,7 +237,7 @@ function Tokenomics() {
                                 fontSize: '20px',
                                 fontWeight: '200',
                                 textAlign: 'center'
-                              }}>September 8, 2021</h1>
+                              }}>September 3, 2021</h1>
           </div>
           <div
               className='counter-container'

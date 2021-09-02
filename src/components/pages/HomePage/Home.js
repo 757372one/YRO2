@@ -47,7 +47,6 @@ function Home() {
               <div className='container'>
                     <Landing />
                     <Tokenomics />
-                    <Presale />
                     <Roadmap />
                     <Buy />
                     <Team />
