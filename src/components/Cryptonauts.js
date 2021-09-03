@@ -260,7 +260,7 @@ class Cryptonauts extends Component {
                                 fontSize: '10px',
                                 fontWeight: '200',
                                 textAlign: 'center'
-                              }}>* NFT Marketplace coming in Q4! Check roadmap for development updates.
+                              }}>* NFT Marketplace coming soon! Check roadmap for development updates.
                               <br /></h1>
                   </div>
                   <p className="bottom-space-md"></p>

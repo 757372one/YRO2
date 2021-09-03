@@ -1,8 +1,17 @@
-
+import Footer from '../Footer/Footer'
+import Navbar from '../../Navbar'
+      
 function Roadmap() {
   return (
     <div>
-        <p className="bottom-space"></p>
+        <Navbar />
+        <div
+        className={false ? 'home__hero-section' : 'home__hero-section darkBg' }
+      >
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div className='container'>
             <section id="roadmap">
             <div className="row">
                 <div className="col">
@@ -39,6 +48,10 @@ function Roadmap() {
             </div>
             
             <p className="bottom-space"></p>
+            </div>
+            </div>
+
+            <Footer />
     </div>
   );
 }

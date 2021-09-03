@@ -58,18 +58,10 @@ function Navbar() {
                 </NavHashLink>
               </li>
               <li className='nav-item'>
-              <NavHashLink to="/#roadmap"
+              <NavHashLink to="roadmap"
               scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'center', inline: "nearest" })}>
                 <div className='nav-links'>
                     Roadmap
-                  </div>
-              </NavHashLink>
-              </li>
-              <li className='nav-item'>
-              <NavHashLink to="/#buy"
-              scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'end', inline: "nearest" })}>
-              <div className='nav-links'>
-                    Buy
                   </div>
               </NavHashLink>
               </li>

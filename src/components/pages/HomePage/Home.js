@@ -1,8 +1,6 @@
 import Landing from '../Landing/Landing';
 import Tokenomics from '../Tokenomics/Tokenomics';
 import Presale from '../Presale/Presale';
-import Roadmap from '../Roadmap/Roadmap';
-import Buy from '../Buy/Buy';
 import Team from '../Team/Team';
 import Footer from '../Footer/Footer';
 import Navbar from '../../Navbar';
@@ -17,7 +15,7 @@ function Home() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 2500)
+    }, 500)
 
   }, [])
 
@@ -35,7 +33,11 @@ function Home() {
                     <FadeLoader color={color} loading={loading} size={30} />
                     <p className="bottom-space"></p>
                   </div>
+
+            <p className="bottom-space" />
             </div>
+
+            <p className="bottom-space" />
         </div>
       ) : (
         <div>
@@ -47,8 +49,7 @@ function Home() {
               <div className='container'>
                     <Landing />
                     <Tokenomics />
-                    <Roadmap />
-                    <Buy />
+                    <Presale />
                     <Team />
               </div>
           </div>

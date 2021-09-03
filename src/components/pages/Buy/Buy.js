@@ -1,12 +1,22 @@
 import { GiReceiveMoney } from 'react-icons/gi';
 import { BsCloudDownload } from 'react-icons/bs';
 import { FaMoneyBillWaveAlt, FaExchangeAlt } from 'react-icons/fa';
+import Footer from '../Footer/Footer'
+import Navbar from '../../Navbar'
 
 function Buy() {
     return (
       <div>
+        <Navbar />
+        <div
+        className={false ? 'home__hero-section' : 'home__hero-section darkBg' }
+      >
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div className='container'>
+        <p className="bottom-space-md" />
         <section id="buy">
-          <p className="bottom-space"></p>
           <div
               className='row home__hero-row'
               style={{
@@ -17,7 +27,7 @@ function Buy() {
               <div className='col'>
                 <div className='home__hero-text-wrapper'>
                 <div className='top-line'>How to start earning passive income?</div>
-            <p className="bottom-space"></p>
+            <p className="bottom-space-md" />
             
                   <p
                     className={
@@ -44,7 +54,7 @@ function Buy() {
               </div>
             </div>
             </section>
-            <p className="bottom-space"></p>
+            <p className="bottom-space-md"></p>
 
           <div className='buy__wrapper'>
                 <div className='buy__container'>
@@ -85,7 +95,14 @@ function Buy() {
                     </div>
                   </div>
                 </div>
+
+              <p className="bottom-space-xsm" />
               </div>
+              <p className="bottom-space" />
+              </div>
+            <p className="bottom-space" />
+            </div>
+            <Footer />
       </div>
     );
   }
