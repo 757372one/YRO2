@@ -22,9 +22,6 @@ class Presale extends Component {
                     }}>Presale Address (BEP20):</h1>
         </div>
         <p className="bottom-space-xsm" />
-        <div className="tokenomics__container">
-        <img src='images/web/presale.png' alt='' style={{width:'150px', height:'150px'}} className='home__hero-img' />
-        </div>
         <p className="bottom-space-xsm" />
         <div className="tokenomics__container">
         <h1 style={{
