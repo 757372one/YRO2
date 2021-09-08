@@ -4,7 +4,6 @@ import Home from './components/pages/HomePage/Home';
 import Dash from './components/Dash';
 import Cryptonauts from './components/Cryptonauts';
 import Roadmap from './components/pages/Roadmap/Roadmap';
-import Buy from './components/pages/Buy/Buy'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
@@ -17,7 +16,6 @@ class App extends Component {
           <Route path='/dashboard' exact component={Dash} />
           <Route path='/cryptonauts' exact component={Cryptonauts} />
           <Route path='/roadmap' exact component={Roadmap} />
-          <Route path='/buy' exact component={Buy} />
         </Switch>
       </Router>
     );
