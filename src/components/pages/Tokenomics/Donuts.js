@@ -64,10 +64,10 @@ export default function PieChart({ data, label }) {
                 data={data}
                 pieValue={value}
                 outerRadius={radius * 0.9}
-                innerRadius={radius * 0.7}
-                startAngle={degreesToRadians(208)}
-                endAngle={degreesToRadians(208 + 360)}
-                padAngle={0.035}
+                innerRadius={radius * 0.75}
+                startAngle={degreesToRadians(180)}
+                endAngle={degreesToRadians(180 + 360)}
+                padAngle={0.04}
               >
                 {pie => {
                   return pie.arcs.map((arc, i) => {

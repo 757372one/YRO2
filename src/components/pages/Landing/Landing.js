@@ -55,8 +55,29 @@ function Landing() {
                 </div>
               </div>
             </div>
-            <p className="bottom-space"></p>
-            
+            <p className="bottom-space-sm"></p>
+            <div to='' className='banner__wrapper'>
+            <div to='' className='banner__container'>
+            <div className='banner__container-card'>
+                  <img src='images/web/bsc.png'  width="150px" alt=''  />
+                  </div>
+                  <div className='banner__container-card'>
+                  <img src='images/web/bsc1.png'  width="150px" alt=''  />
+                  </div>
+
+                  <div className='banner__container-card'>
+                  <img src='images/web/dext.png'  width="150px" alt=''  />
+                  </div>
+
+                  <div className='banner__container-card'>
+                  <img src='images/web/poocoin.png'  width="150px" alt=''  />
+                  </div>
+
+                  <div className='banner__container-card'>
+                  <img src='images/web/pancakeswap.png'  width="150px" alt=''  />
+                  </div>
+                  </div>
+                  </div>
             <p className="bottom-space"></p>
             <div
               className='row home__hero-row'
