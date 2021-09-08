@@ -37,9 +37,9 @@ function Landing() {
                     <div className='col'>
                     <div
                       className='btn-link'>
-                      <a href='https://twitter.com/yieldrocket'>
-                        <Button buttonSize='btn--wide' buttonColor='blue'>
-                          Twitter
+                      <a href='https://pancakeswap.finance/'>
+                        <Button buttonSize='btn--wide' buttonColor='red'>
+                          Buy on PancakeSwap
                         </Button>
                       </a>
                     </div>
@@ -59,22 +59,31 @@ function Landing() {
             <div to='' className='banner__wrapper'>
             <div to='' className='banner__container'>
             <div className='banner__container-card'>
-                  <img src='images/web/bsc.png'  width="150px" alt=''  />
-                  </div>
-                  <div className='banner__container-card'>
-                  <img src='images/web/bsc1.png'  width="150px" alt=''  />
-                  </div>
-
-                  <div className='banner__container-card'>
-                  <img src='images/web/dext.png'  width="150px" alt=''  />
-                  </div>
-
-                  <div className='banner__container-card'>
-                  <img src='images/web/poocoin.png'  width="150px" alt=''  />
-                  </div>
-
-                  <div className='banner__container-card'>
+                  <a href=''>
                   <img src='images/web/pancakeswap.png'  width="150px" alt=''  />
+                  </a>
+                  </div>
+            <div className='banner__container-card'>
+                  <a href=''>
+                  <img src='images/web/bsc.png'  width="150px" alt=''  />
+                  </a>
+                  </div>
+                  <div className='banner__container-card'>
+                  <a href=''>
+                  <img src='images/web/bsc1.png'  width="150px" alt=''  />
+                  </a>
+                  </div>
+
+                  <div className='banner__container-card'>
+                  <a href=''>
+                  <img src='images/web/dext.png'  width="150px" alt=''  />
+                  </a>
+                  </div>
+
+                  <div className='banner__container-card'>
+                  <a href=''>
+                  <img src='images/web/poocoin.png'  width="150px" alt=''  />
+                  </a>
                   </div>
                   </div>
                   </div>

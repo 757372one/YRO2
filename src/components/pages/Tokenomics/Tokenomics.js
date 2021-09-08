@@ -1,6 +1,9 @@
 import React from 'react';
 import { GiWallet, GiDroplets, GiSpermWhale } from 'react-icons/gi';
 import PieChart from './Donuts';
+import { GiReceiveMoney } from 'react-icons/gi';
+import { BsCloudDownload } from 'react-icons/bs';
+import { FaMoneyBillWaveAlt, FaExchangeAlt } from 'react-icons/fa';
 
 
 
@@ -116,7 +119,7 @@ function Tokenomics() {
                                 fontSize: '13px',
                                 fontWeight: '200',
                                 textAlign: 'left',
-                                marginTop: '15px',
+                                marginTop: '25px',
                                 marginLeft: '75px',
                                 marginRight: '10px'
                               }}>10%&nbsp;split proportionately between YRO holders in BUSD.
@@ -138,6 +141,73 @@ function Tokenomics() {
                 </div>
               </section>
           <p className="bottom-space-md" />
+          <div className="tokenomics__container">
+                    <h1 style={{
+                                display: 'flex',
+                                fontSize: '18px',
+                                fontWeight: '300',
+                                textAlign: 'center',
+                              }}>By holding YRO you will automatically receive BUSD (Binance-Pegged USD dollar) directly into your wallet as each BUY and SELL occurs on the network, 
+                              a percentage from every transaction is distributed to YRO holders in the form of BUSD.
+                              </h1>
+                              </div>
+                  <div className="tokenomics__container">
+                    <h1 style={{
+                                display: 'flex',
+                                fontSize: '18px',
+                                fontWeight: '300',
+                                textAlign: 'center',
+                              }}>YRO holders are able to Automatically farm without staking coins on any 3rd party platform. 
+                              All you need to do to farm BUSD straight to your wallet is HOLD YieldRocket and reap the rewards.
+                              </h1>
+                              </div>
+
+          <p className="bottom-space-md" />
+                              <div className="tokenomics__container">
+        <img src='images/web/salut.png' alt='' style={{width:'125px', height:'225px'}} className='home__hero-img' />
+        </div>
+        <div className='buy__wrapper'>
+                <div className='buy__container'>
+                <div to='' className='buy__container-card'>
+                    <div className='team__container-cardInfo'>
+                      <div className="team__container-features">
+                      <h1><BsCloudDownload color="white" width="50px"/></h1>
+                      </div>
+                      <h3>#1</h3>
+                      <p>Download Trust Wallet or Metamask</p>
+                    </div>
+                  </div>
+                  <div to='' className='buy__container-card'>
+                    <div className='team__container-cardInfo'>
+                      <div className="team__container-features">
+                      <h1><FaMoneyBillWaveAlt color="white" width="50px"/></h1>
+                      </div>
+                      <h3>#2</h3>
+                      <p>Fund your wallet with BNB</p>
+                    </div>
+                  </div>
+                  <div to='' className='buy__container-card'>
+                    <div className='team__container-cardInfo'>
+                      <div className="team__container-features">
+                      <h1><FaExchangeAlt color="white" width="50px"/></h1>
+                      </div>
+                      <h3>#3</h3>
+                      <p>Swap BNB for $YieldRocket on Pancakeswap</p>
+                    </div>
+                  </div>
+                  <div to='' className='buy__container-card'>
+                    <div className='team__container-cardInfo'>
+                      <div className="team__container-features">
+                      <h1><GiReceiveMoney color="white" width="50px"/></h1>
+                      </div>
+                      <h3>#4</h3>
+                      <p>$BUSD rewards will be automatically sent to your wallet</p>
+                    </div>
+                  </div>
+                </div>
+
+              <p className="bottom-space-xsm" />
+              </div>
                   
           </div>
   );
