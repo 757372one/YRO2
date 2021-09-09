@@ -65,7 +65,14 @@ function Navbar() {
                   </div>
               </NavHashLink>
               </li>
-              
+              <li className='nav-item'>
+              <NavHashLink to="whitepaper"
+              scroll={el => el.scrollIntoView({ behavior: 'instant', block: 'center', inline: "nearest" })}>
+                <div className='nav-links'>
+                    Whitepaper
+                  </div>
+              </NavHashLink>
+              </li>
               <li className='nav-item'>
               <Link to="cryptonauts">
               <div className='nav-links'>

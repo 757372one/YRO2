@@ -12,9 +12,11 @@ function Whitepaper() {
         <div id="stars2"></div>
         <div id="stars3"></div>
             <div className='container'>
-                <p className="bottom-space" />
-                <p className="bottom-space" />
-                <p className="bottom-space" />
+                <div className='row'>
+                    <div width="100%">
+                        <img src='images/web/whitepaper.png' width="100%" alt='' className='home__hero-img' />
+                    </div>
+                </div>
             </div>
         </div>
         <Footer />
