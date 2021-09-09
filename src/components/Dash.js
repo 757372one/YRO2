@@ -105,7 +105,7 @@ class Dash extends Component {
 	      });
 		  
 		   this.setState({
-     walletAddress: ((await (this.busdApp.methods.balanceOf(wallet).call()))/this.biggerNumber).toFixed(2)+"M"
+     walletAddress: ((await (this.busdApp.methods.balanceOf(wallet).call())))
 	      });
     // document.getElementById('balanceBUSDRewards').innerHTML = 
     // ((await (this.busdApp.methods.getAccountDividendsInfo(wallet).call()))[4]/this.bigNumber).toFixed(2);
