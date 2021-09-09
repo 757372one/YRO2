@@ -65,6 +65,7 @@ function Navbar() {
                   </div>
               </NavHashLink>
               </li>
+              
               <li className='nav-item'>
               <Link to="cryptonauts">
               <div className='nav-links'>
