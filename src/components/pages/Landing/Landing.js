@@ -37,7 +37,7 @@ function Landing() {
                     <div className='col'>
                     <div
                       className='btn-link'>
-                      <a href='https://pancakeswap.finance/'>
+                      <a href='https://pancakeswap.finance/swap#/swap?outputCurrency=0xd1087290aa03335b55cb9cc9ca59ed4d973ca949'>
                         <Button buttonSize='btn--wide' buttonColor='red'>
                           Buy on PancakeSwap
                         </Button>
@@ -59,29 +59,29 @@ function Landing() {
             <div to='' className='banner__wrapper'>
             <div to='' className='banner__container'>
             <div className='banner__container-card'>
-                  <a href=''>
+                  <a href='https://pancakeswap.finance/swap#/swap?outputCurrency=0xd1087290aa03335b55cb9cc9ca59ed4d973ca949'>
                   <img src='images/web/pancakeswap.png'  width="150px" alt=''  />
                   </a>
                   </div>
             <div className='banner__container-card'>
-                  <a href=''>
+                  <a href='https://bscscan.com/address/0xd1087290aa03335b55cb9cc9ca59ed4d973ca949'>
                   <img src='images/web/bsc.png'  width="150px" alt=''  />
                   </a>
                   </div>
                   <div className='banner__container-card'>
-                  <a href=''>
+                  <a href='https://bscscan.com/token/0xd1087290aa03335b55cb9cc9ca59ed4d973ca949'>
                   <img src='images/web/bsc1.png'  width="150px" alt=''  />
                   </a>
                   </div>
 
                   <div className='banner__container-card'>
-                  <a href=''>
+                  <a href='https://www.dextools.io/app/bsc/pair-explorer/0x82103b25f6a8987c6a88b037763bd63655515cf5'>
                   <img src='images/web/dext.png'  width="150px" alt=''  />
                   </a>
                   </div>
 
                   <div className='banner__container-card'>
-                  <a href=''>
+                  <a href='https://poocoin.app/tokens/0xd1087290aa03335b55cb9cc9ca59ed4d973ca949'>
                   <img src='images/web/poocoin.png'  width="150px" alt=''  />
                   </a>
                   </div>
