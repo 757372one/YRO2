@@ -26,7 +26,7 @@ function Tokenomics() {
                           <h1><GiWallet /></h1>
                         </div>
                         <h3>$BUSD rewards</h3>
-                        <h4>10%</h4>
+                        <h4>5%</h4>
                         <p>per transaction</p>
                         <ul className='tokenomics__container-features'>
                           <li>Stable coin reflection</li>
@@ -41,7 +41,7 @@ function Tokenomics() {
                           <h1><GiDroplets /></h1>
                         </div>
                         <h3>Liquidity</h3>
-                        <h4>8%</h4>
+                        <h4>4%</h4>
                         <p>per transaction</p>
                         <ul className='tokenomics__container-features'>
                           <li>Automatically generated</li>
@@ -112,19 +112,18 @@ function Tokenomics() {
                     >
                     <div className='col'>
                     <div style={{paddingLeft:'60px'}}>
-                  <img src='images/web/tax.png'  width="500px" alt='tax' className='home__hero-img' />
                   </div>
                   <h1 style={{
                                 display: 'flex',
-                                fontSize: '13px',
+                                fontSize: '15px',
                                 fontWeight: '200',
                                 textAlign: 'left',
                                 marginTop: '25px',
-                                marginLeft: '75px',
-                                marginRight: '10px'
-                              }}>10%&nbsp;split proportionately between YRO holders in BUSD.
-                              <br />8%&ensp;added back to the Liquidity Pool to increase price stability.
-                              <br />2%&ensp;added to fund the continiuous development of YieldRocket.
+                                marginLeft: '50px',
+                                marginRight: '5px'
+                              }}>5%&nbsp;split proportionately between YRO holders in BUSD.
+                              <br />4%&ensp;added back to the Liquidity Pool to increase price stability.
+                              <br />1%&ensp;added to fund the continiuous development of YieldRocket.
                             </h1>
               </div>
                   <div className='col'>
@@ -147,6 +146,7 @@ function Tokenomics() {
                                 fontSize: '18px',
                                 fontWeight: '300',
                                 textAlign: 'center',
+                                padding: '25px'
                               }}>By holding YRO you will automatically receive BUSD (Binance-Pegged USD dollar) directly into your wallet as each BUY and SELL occurs on the network, 
                               a percentage from every transaction is distributed to YRO holders in the form of BUSD.
                               </h1>

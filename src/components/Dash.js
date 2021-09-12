@@ -9,6 +9,8 @@ class Dash extends Component {
   YieldRocketContract = "0xd1087290aa03335b55cb9cc9ca59ed4d973ca949";
   biggerNumber =   "1000000000000000000";
   bigNumber =      "1000000000000000000";
+  totalRewardsNumber = "100000000000000000000000000000"
+  totalRewards = "1000000000000000000000000000000"
   balanceBUSDRewards = 0;
   totalBUSDRewards = 0;
   totalBUSDtokens = 0;
@@ -59,7 +61,7 @@ class Dash extends Component {
   async loadContract() {
     this.busdApp = new this.web3.eth.Contract(busdAbi, this.YieldRocketContract);
     let totalBUSD = await this.busdApp.methods.getTotalDividendsDistributed().call();
-    document.getElementById('totalBUSDRewards').innerHTML = (totalBUSD/this.bigNumber).toFixed(2);
+    document.getElementById('totalBUSDRewards').innerHTML = (totalBUSD/this.totalRewardsNumber).toFixed(4);
   }
 
   async connect() {
@@ -68,7 +70,7 @@ class Dash extends Component {
     this.setState({ account: accounts[0] })
   
   this.setState({
-      walletRewards: ((await (this.busdApp.methods.getAccountDividendsInfo(this.state.account).call()))[4]/this.bigNumber).toFixed(2)
+      walletRewards: ((await (this.busdApp.methods.getAccountDividendsInfo(this.state.account).call()))[4]/this.totalRewards).toFixed(2)
 	      });
 		  
 		   this.setState({
