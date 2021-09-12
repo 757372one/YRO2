@@ -9,8 +9,8 @@ class Dash extends Component {
   YieldRocketContract = "0xd1087290aa03335b55cb9cc9ca59ed4d973ca949";
   biggerNumber =   "1000000000000000000";
   bigNumber =      "1000000000000000000";
-  totalRewardsNumber = "100000000000000000000000000000"
-  totalRewards = "1000000000000000000000000000000"
+  totalRewardsNumber = "100000000000000000000000000000";
+  totalRewards = "1000000000000000000000000000000";
   balanceBUSDRewards = 0;
   totalBUSDRewards = 0;
   totalBUSDtokens = 0;
